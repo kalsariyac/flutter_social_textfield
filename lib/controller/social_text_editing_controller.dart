@@ -35,7 +35,7 @@ class SocialTextEditingController extends TextEditingController{
     DetectedType.mention:atSignRegExp,
     DetectedType.community:plusSignRegExp,
     DetectedType.hashtag:hashTagRegExp,
-    DetectedType.asset:urlRegex,
+    DetectedType.asset:dollarSignRegex,
     DetectedType.url:urlRegex
   };
 
