@@ -62,6 +62,15 @@ final atSignRegExp = RegExp(
   multiLine: true,
 );
 
+final plusSignRegExp = RegExp(
+  "(?!\\n)(?:^|\\s)([+]([$detectionContentLetters]+))",
+  multiLine: true,
+);
+final dollarSignRegex = RegExp(
+  "(?!\\n)(?:^|\\s)([\$]([$detectionContentLetters]+))",
+  multiLine: true,
+);
+
 final urlRegex = RegExp(
   urlRegexContent,
   multiLine: true,

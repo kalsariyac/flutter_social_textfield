@@ -33,8 +33,10 @@ class SocialTextEditingController extends TextEditingController{
 
   final Map<DetectedType, RegExp> _regularExpressions = {
     DetectedType.mention:atSignRegExp,
+    DetectedType.community:plusSignRegExp,
     DetectedType.hashtag:hashTagRegExp,
-    DetectedType.url:urlRegex,
+    DetectedType.asset:urlRegex,
+    DetectedType.url:urlRegex
   };
 
   StreamSubscription<SocialContentDetection> subscribeToDetection(Function(SocialContentDetection detected) listener){
